@@ -1,27 +1,32 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-.container{
+
+.container {
     width: 100%;
     /* border: 2px solid black; */
 }
-.item-container{
+
+.item-container {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
-.padding{
+
+.padding {
     padding: 15px;
 }
-.page{
+
+.page {
     max-width: 100%;
     width: 100%;
     align-items: center;
 }
-.product{
+
+.product {
     display: flex;
     /* border: 2px solid blue; */
     margin-top: 20px;
@@ -30,7 +35,8 @@
     align-items: center;
 
 }
-.product-card{
+
+.product-card {
     height: 290px;
     display: flex;
     flex-direction: column;
@@ -40,10 +46,16 @@
     margin-top: 30px;
 }
 
-.product-card:hover{
+.product-card a {
+    text-decoration: none;
+    color: black;
+}
+
+.product-card:hover {
     background-color: rgb(243, 240, 243);
 }
-.product-container{
+
+.product-container {
     width: 100%;
     display: flex;
     justify-content: center;
@@ -51,82 +63,124 @@
     flex-wrap: wrap;
 
 }
-.img{
+
+.img {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
 }
-.img img{
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.img img {
     width: 100%;
 }
-.link-container{
+
+.link-container {
     width: 100%;
     border-bottom: 10px solid rgb(65, 70, 90);
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
 }
-.links{
+
+.links {
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
 }
-.links li{
+
+.links li {
     margin: 10px;
     text-decoration: none;
     list-style: none;
 }
-.links li a{
+
+.links li a {
     text-decoration: none;
     font-size: 15px;
 }
-.links li a:hover{
+
+.links li a:hover {
     border-bottom: 2px solid black;
 }
-.imgwidth{
 
+.imgwidth {
+    /* margin-top: 30px; */
 }
-.right{
+
+.right {
     margin-right: 15px;
 }
-.imgwidth img{
+
+.imgwidth img {
     width: 100%;
 }
-.page{
+
+.page {
     width: 100%;
 }
-.page img{
+
+.page img {
     width: 100%;
 }
-.product-img{
+
+.product-img {
     width: 250px;
 }
-.product-img img{
+
+.product-img img {
     width: 100%;
 }
 
-.video{
+.video {
     width: 100%;
 }
 
-.video video{
+.video video {
     width: 100%;
 }
 
-.resize{
-        height: 628px;
+.resize {
+    height: 628px;
     margin-top: 38vh;
 }
 
-.input{
+.input {
     height: 31px;
     width: 217px;
-    text-align: end;
+    text-align: center;
+    /* margin-right: 100px; */
 }
 
-.btn-container{
+.hide{
+    display: flex;
+}
+
+.popup{
+    opacity: 0;
+}
+
+.btn-container {
     background-color: yellow;
     width: 233px;
     align-items: center;
@@ -138,7 +192,7 @@
     margin-bottom: 40px;
 }
 
-.deal{
+.deal {
     background-color: green;
     width: 44px;
     text-align: center;
@@ -149,53 +203,166 @@
     border-radius: 4px;
 }
 
-.about-product h5{
+.about-product h5 {
     margin-top: 20px;
 }
 
-.footer{
+.footer {
     width: 100%;
     background-color: black;
     height: 100px;
 }
 
 @media screen and (max-width: 1035px) {
-   .padding{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-   }
-   .link-container{
-    display: flex;
-    flex-wrap: wrap;
-   }
-   .img{
-    display: flex;
-    /* flex-direction: column; */
-    flex-wrap: wrap;
-    /* width: 300px; */
-   }
-   .video{
-    display: flex;
-    flex-wrap: wrap;
-   }
-   .none{
-    display: none;
-   }
-  }
+    .padding {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
 
-  @media screen and (max-width: 600px) {
-    .link-container{
+    .link-container {
         display: flex;
         flex-wrap: wrap;
-       }
-       .none{
-        display: none;
-       }
-  }
+      
+    }
 
-  @media screen and (max-width: 400px) {
+    .img {
+        display: flex;
+        /* flex-direction: column; */
+        flex-wrap: wrap;
+        /* width: 300px; */
+    }
+
+    .resize {
+        margin-top: 12px;
+    }
+
+    .video {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
     .input{
+        display: none;
+    }
+    .right {
+        margin-right: 8px;
+    }
+
+    .right1 {
+        margin-right: 8px;
+    }
+
+    .marginTop {
+        margin-top: 12px;
+    }
+    
+    .sidebar{
+        height: 100%;
+        position: fixed;
+        right: 0;
+        top: 0;
+        width: 250px;
+        /* margin-top: 60px;  */
+        transform: translateX(250px);
+        transition: transform 1s ease-in-out;
+    }
+    
+    .links{
+        display: flex;
+        flex-direction: column;
+        background-color: azure;
+    }
+
+    .sideBarIconToggle{
+        /* background-color: blue; */
+        height: 40px;
+        width: 40px;
+        position: absolute;
+        z-index: 20;
+        top: 30px;
+        left: 15px;
+        cursor: pointer;
+    }
+    .spinner{
+        background-color: rgb(28, 158, 39);
+        height: 10px;
+        transition: all 0.5s ease-in;
+    }
+    .spinner .middle{
+        margin-top: 3px;
+    }
+    #openSideBarMenu:checked ~ .sidebar {
+        transform: translateX(0);
+    }
+}
+
+@media screen and (max-width: 980px) {
+    .right {
+        margin-right: 0px;
+    }
+
+    .right1 {
+        margin-right: 0px;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .link-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+/* 
+    .none {
+        display: none;
+    } */
+
+    .right {
+        margin-right: 0px;
+    }
+
+    .right1 {
+        margin-right: 0px;
+    }
+
+    .marginTop1 {
+        margin-top: 552px;
+    }
+    .input{
+        margin-left: -100px;
+    }
+    /* #popup{
+        transform: translateX(200px);
+    } */
+}
+
+@media screen and (max-width: 400px) {
+    .input {
         margin-right: 100px;
     }
-  }
+
+    .right {
+        margin-right: 0px;
+    }
+
+    .resize {
+        margin-top: -139px
+    }
+}
+
+@media screen and (min-width: 1230px) {
+    .product-container {
+        width: 100%;
+    }
+
+    .product-card {
+        width: 20%;
+        margin: 10px;
+    }
+}
+
+
+  
