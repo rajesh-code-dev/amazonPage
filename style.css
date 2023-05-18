@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 .container {
@@ -43,7 +44,7 @@
     justify-content: center;
     align-items: center;
     width: 285px;
-    margin-top: 30px;
+    margin-top: 60px;
 }
 
 .product-card a {
@@ -244,9 +245,14 @@
         flex-wrap: wrap;
     }
 
-    /* .input {
-        display: none;
-    } */
+    .none {
+        opacity: 0;
+        width: 0px;
+    }
+
+    .noneWidth {
+        width: 5px;
+    }
 
     .right {
         margin-right: 8px;
@@ -273,35 +279,44 @@
 
     .links {
         display: flex;
-        flex-direction: column;
         background-color: azure;
+        flex-wrap: wrap;
     }
 
-    .sideBarIconToggle {
-        /* background-color: blue; */
-        height: 40px;
-        width: 40px;
-        position: absolute;
-        z-index: 20;
-        top: 0px;
-        left: 15px;
-        cursor: pointer;
+    li {
+        margin: 0px;
     }
 
-    .spinner {
-        background-color: rgb(28, 158, 39);
-        height: 10px;
-        transition: all 0.5s ease-in;
-        border: 1px solid white;
+    .links li a {
+        text-decoration: none;
+        font-size: 9px;
     }
 
-    .spinner .middle {
-        margin-top: 3px;
+    .links li {
+        margin: 0px;
+        text-decoration: none;
+        list-style: none;
     }
 
-    #openSideBarMenu:checked~.sidebar {
-        transform: translateX(0);
+    .home {
+        margin-right: 5px
     }
+
+    .input {
+        height: 19px;
+        width: 160px;
+        text-align: center;
+    }
+    .screen400 {
+        width: 180px;
+    }
+
+    .product-grid{
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+    .p
+
 }
 
 @media screen and (max-width: 980px) {
@@ -318,10 +333,15 @@
         flex-direction: column;
         justify-content: center;
     }
-    .btn-container{
+
+    .btn-container {
         display: flex;
-    flex-direction: column;
-    justify-content: center;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .screen400 {
+        width: 180px;
     }
 }
 
@@ -351,14 +371,45 @@
     .input {
         margin-left: 20px;
     }
-    .btn-container{
+
+    /* .btn-container {
         margin-left: 20px;
+    } */
+
+    .links {
+        display: flex;
+        /* justify-content: center; */
+        align-items: center;
+        width: 100%;
     }
+
+    .links li a {
+        text-decoration: none;
+        font-size: 5px;
+        font-weight: 700;
+    }
+
+    .link-container {
+        border-bottom: 2px solid rgb(65, 70, 90);
+    }
+
+    .screen400 {
+        width: 112px;
+    }
+    p{
+        font-size: 10px;
+    font-weight: 600;
+    }
+    
+    
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 460px) {
     .input {
-        margin-right: 100px;
+        height: 16px;
+        width: 85px;
+        text-align: center;
+        font-size: 8px;
     }
 
     .right {
@@ -368,7 +419,61 @@
     .resize {
         margin-top: -139px
     }
+
+    .links {
+        display: flex;
+        /* justify-content: center; */
+        align-items: center;
+        width: 100%;
+    }
+
+    .links li a {
+        text-decoration: none;
+        font-size: 8px;
+        font-weight: 700;
+    }
+
+    .link-container {
+        border-bottom: 2px solid rgb(65, 70, 90);
+    }
+
+    .screen400 {
+        width: 97px;
+    }
+
+    .product-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        /* width: 285px; */
+        margin-top: 30px;
+        flex-wrap: wrap;
+        width: 120px;
+        padding: 5px;
+    }
+    .product-img{
+        width: 100%;
+    }
+    .btn-container{
+        width: 100%;
+    }
+    .btn-container div{
+        font-size: 10px;
+    }
 }
+
+@media screen and (max-width: 420px) {
+    .screen400 {
+        width: 90px;
+    }
+}
+@media screen and (max-width: 390px) {
+    .screen400 {
+        width: 85px;
+    }
+}
+
 
 @media screen and (min-width: 1230px) {
     .product-container {
