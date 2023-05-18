@@ -172,11 +172,11 @@
     /* margin-right: 100px; */
 }
 
-.hide{
+.hide {
     display: flex;
 }
 
-.popup{
+.popup {
     opacity: 0;
 }
 
@@ -225,7 +225,7 @@
     .link-container {
         display: flex;
         flex-wrap: wrap;
-      
+
     }
 
     .img {
@@ -244,9 +244,10 @@
         flex-wrap: wrap;
     }
 
-    .input{
+    /* .input {
         display: none;
-    }
+    } */
+
     .right {
         margin-right: 8px;
     }
@@ -258,8 +259,8 @@
     .marginTop {
         margin-top: 12px;
     }
-    
-    .sidebar{
+
+    .sidebar {
         height: 100%;
         position: fixed;
         right: 0;
@@ -269,32 +270,36 @@
         transform: translateX(250px);
         transition: transform 1s ease-in-out;
     }
-    
-    .links{
+
+    .links {
         display: flex;
         flex-direction: column;
         background-color: azure;
     }
 
-    .sideBarIconToggle{
+    .sideBarIconToggle {
         /* background-color: blue; */
         height: 40px;
         width: 40px;
         position: absolute;
         z-index: 20;
-        top: 30px;
+        top: 0px;
         left: 15px;
         cursor: pointer;
     }
-    .spinner{
+
+    .spinner {
         background-color: rgb(28, 158, 39);
         height: 10px;
         transition: all 0.5s ease-in;
+        border: 1px solid white;
     }
-    .spinner .middle{
+
+    .spinner .middle {
         margin-top: 3px;
     }
-    #openSideBarMenu:checked ~ .sidebar {
+
+    #openSideBarMenu:checked~.sidebar {
         transform: translateX(0);
     }
 }
@@ -308,6 +313,16 @@
         margin-right: 0px;
     }
 
+    .product-img {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .btn-container{
+        display: flex;
+    flex-direction: column;
+    justify-content: center;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -315,7 +330,8 @@
         display: flex;
         flex-wrap: wrap;
     }
-/* 
+
+    /* 
     .none {
         display: none;
     } */
@@ -331,12 +347,13 @@
     .marginTop1 {
         margin-top: 552px;
     }
-    .input{
-        margin-left: -100px;
+
+    .input {
+        margin-left: 20px;
     }
-    /* #popup{
-        transform: translateX(200px);
-    } */
+    .btn-container{
+        margin-left: 20px;
+    }
 }
 
 @media screen and (max-width: 400px) {
@@ -363,6 +380,3 @@
         margin: 10px;
     }
 }
-
-
-  
