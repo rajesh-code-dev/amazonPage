@@ -247,6 +247,7 @@
         /* flex-direction: column; */
         /* flex-wrap: wrap; */
         /* width: 300px; */
+        gap: 10px;
     }
 
     .resize {
