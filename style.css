@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -98,10 +99,12 @@
 
 .link-container {
     width: 100%;
-    border-bottom: 10px solid rgb(65, 70, 90);
+    border-bottom: 5px solid rgb(161, 166, 185);
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    background-color: #f9f9f9;
+
 }
 
 .links {
@@ -117,11 +120,11 @@
     list-style: none;
 }
 
-.banner{
+.banner {
     margin-left: 20px;
 }
 
-.banner a{
+.banner a {
     text-decoration: none;
     font-size: 15px;
     color: rgb(163, 152, 152);
@@ -317,6 +320,7 @@
         /* left: 15px;
         cursor: pointer;
         font-size: 25px; */
+        margin-right: 23px;
     }
 
     .spinner {
@@ -333,6 +337,7 @@
     #openSideBarMenu:checked~.sidebar {
         transform: translateX(0);
     }
+   
 }
 
 @media screen and (max-width: 980px) {
@@ -414,12 +419,23 @@
         align-items: center;
         gap: 14px;
     }
+
 }
 
 @media screen and (max-width: 440px) {
     .input {
         margin-right: 100px;
     }
+    /* .img {
+        display: flex;
+        /* flex-direction: column; */
+        /* flex-wrap: wrap; */
+        /* width: 300px; */
+        /* gap: 10px; */
+    /* } */ 
+    /* .size{
+        width: 170px
+    } */
 
     .right {
         margin-right: 0px;
