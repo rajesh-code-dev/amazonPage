@@ -1,7 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 .container {
@@ -104,20 +106,31 @@
 
 .links {
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     width: 100%;
 }
 
 .links li {
-    margin: 10px;
+    margin: 5px;
     text-decoration: none;
     list-style: none;
+}
+
+.banner{
+    margin-left: 20px;
+}
+
+.banner a{
+    text-decoration: none;
+    font-size: 15px;
+    color: rgb(163, 152, 152);
 }
 
 .links li a {
     text-decoration: none;
     font-size: 15px;
+    color: black;
 }
 
 .links li a:hover {
@@ -135,7 +148,7 @@
 }
 
 .right {
-    margin-right: 15px;
+    margin-right: 5px;
 }
 
 .imgwidth img {
