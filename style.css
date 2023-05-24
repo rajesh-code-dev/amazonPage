@@ -385,7 +385,7 @@
     }
 
     .product-img {
-        width: 70%;
+        width: 100%;
     }
 
     .btn-container {
@@ -397,7 +397,7 @@
         /* border: 2px solid blue; */
         margin-top: 20px;
         flex-wrap: wrap;
-        justify-content: center;
+        justify-content: space-around;
         align-items: center;
         gap: 14px;
     }
