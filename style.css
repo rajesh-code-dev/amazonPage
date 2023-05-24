@@ -7,6 +7,14 @@
     font-family: 'Poppins', sans-serif;
 }
 
+.link-container{
+    max-width: 1400px;
+}
+
+.padding{
+    max-width: 1400px;
+}
+
 .container {
     width: 100%;
     /* border: 2px solid black; */
