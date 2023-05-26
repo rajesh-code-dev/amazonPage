@@ -373,9 +373,10 @@
         margin-bottom: 20px;
         font-size: 20px;
         border: 1px solid black;
-        border-left: none;
         border-top-right-radius: 6px;
         border-bottom-right-radius: 6px;
+        border-left: none;
+        
         
     }
 
