@@ -334,8 +334,8 @@
         display: block;
         height: 40px;
         width: 40px;
-        /* position: fixed;
-        z-index: 20; */
+        /* position: fixed; */
+        
         top: 80px;
         /* left: 15px;
         cursor: pointer;
@@ -356,6 +356,7 @@
 
     #openSideBarMenu:checked~.sidebar {
         transform: translateX(0);
+        z-index: 20; 
     }
 
     .right {
